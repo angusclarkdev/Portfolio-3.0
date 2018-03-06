@@ -1,0 +1,33 @@
+#Header {
+  height: 3rem;
+  position: fixed;
+  width: inherit;
+  top: 0;
+  background-color: $secondaryBg;
+  z-index: 1;
+  line-height: 1.5;
+  border-left: 0.5rem solid $accentBorder;
+    nav {
+    height: inherit;
+    margin: 0;
+    width: inherit;
+      ul {
+      height: inherit;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0;
+        a {
+        justify-self: center;
+        align-self: center;
+        &:active {
+          color: inherit;
+        }
+      }
+    }
+    li {
+      font-weight: 400;
+
+    }
+  }
+}
