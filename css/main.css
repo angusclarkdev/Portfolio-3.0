@@ -1,13 +1,17 @@
 p {
   font-size: 1.1rem;
   margin: 0;
-  padding: 1rem 2rem 1rem 2rem; }
+  padding: 1rem 1rem 1rem 1rem; }
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  cursor: pointer; }
   a:focus {
     outline: none !important; }
+  a.link {
+    color: #6cd6bb;
+    font-weight: 400; }
 
 h1, h2, h3 {
   font-family: "Lato", sans-serif;
@@ -85,7 +89,8 @@ form {
       border-radius: 50%;
       box-shadow: 0px 4px 3px rgba(153, 153, 153, 0.8); }
   #Hero .intro p {
-    text-align: center; }
+    text-align: center;
+    padding: 0 2rem; }
   #Hero h1 {
     margin: 5rem 0 1rem 0; }
   #Hero h3 {
@@ -93,31 +98,28 @@ form {
 
 #Projects {
   background-color: #fbfbfb; }
+  #Projects .image {
+    background-color: #fff;
+    margin: 0 1rem 2rem 1rem;
+    box-sizing: content-box; }
   #Projects img {
     width: 100%;
     position: relative;
     box-sizing: border-box;
     background: linear-gradient(#45f8d5, #6cd6bb);
     display: block; }
+    #Projects img:hover {
+      cursor: pointer; }
   #Projects .name {
-    background-color: #fff;
     padding-top: 1rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    font-weight: 400; }
   #Projects ul {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     flex-direction: row;
     justify-content: center; }
-  #Projects .image {
-    margin: 0 1rem;
-    position: relative;
-    box-sizing: content-box; }
-    #Projects .image:hover {
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-      cursor: pointer; }
-  #Projects p.description {
-    padding-bottom: 4rem; }
 
 #Footer {
   background-color: #f7f7f7;

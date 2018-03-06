@@ -1,13 +1,19 @@
 p {
 font-size: 1.1rem;
 margin: 0;
-padding: 1rem 2rem 1rem 2rem;
+padding: 1rem 1rem 1rem 1rem;
 }
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+
   &:focus {
       outline: none !important;
+  }
+  &.link {
+    color: $highlightedText;
+    font-weight: 400;
   }
 }
 h1, h2,  h3 {

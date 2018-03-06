@@ -1,23 +1,26 @@
 #Projects {
   background-color: #fbfbfb;
 
+  .image {
+    background-color: #fff;
+    margin: 0 1rem 2rem 1rem;
+    box-sizing: content-box;
+    }
+
   img {
     width: 100%;
     position: relative;
     box-sizing: border-box;
     background: linear-gradient(#45f8d5, #6cd6bb);
     display: block;
-
-
-    //border: 2px solid black;
-    //border-bottom: 4px solid black;
+    &:hover {
+      cursor: pointer;
   }
+}
   .name {
-  background-color: #fff;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  //padding: 1rem;
-
+  font-weight: 400;
   }
   ul {
     display: -webkit-flex;
@@ -25,17 +28,5 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  .image {
-    margin: 0 1rem;
-    position: relative;
-    box-sizing: content-box;
-    &:hover {
-      box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-      cursor: pointer;
-    }
-  }
-  p.description {
-    padding-bottom: 4rem;
   }
 }
