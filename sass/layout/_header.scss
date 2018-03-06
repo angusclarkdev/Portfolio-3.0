@@ -6,7 +6,7 @@
   background-color: $secondaryBg;
   z-index: 1;
   line-height: 1.5;
-  border-left: 0.5rem solid $accentBorder;
+  //border-left: 0.5rem solid $accentBorder;
     nav {
     height: inherit;
     margin: 0;
@@ -18,16 +18,22 @@
       grid-template-columns: 1fr 1fr 1fr;
       padding: 0;
         a {
+          line-height: 46px;
         justify-self: center;
         align-self: center;
         &:active {
           color: inherit;
         }
-      }
+    }
     }
     li {
-      font-weight: 400;
+
 
     }
+  }
+  .activeLink {
+    border-bottom: 2px solid $navBorder;
+    font-weight: 400;
+
   }
 }

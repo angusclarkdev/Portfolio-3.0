@@ -13,26 +13,27 @@
 @import "layout/header.scss";
 @import "layout/hero.scss";
 @import "layout/projects.scss";
+@import "layout/contact.scss";
 @import "layout/footer.scss";
 
 
 html {
   font-size: 16px;
-  background-color: #fff;
   margin: 0;
   width: 100%;
   overflow-x: hidden;
 }
 
 body {
+  overflow-y: hidden;
   margin: 0;
   width: 100%;
   text-align: center;
   line-height: 1.5;
   overflow-x: hidden;
-  font-family: $sourceSans;
-  font-weight: normal;
-  color: #333;
+  font-family: $work;
+  font-weight: 300;
+  color: #333333;
 }
 
 ul {
@@ -48,6 +49,6 @@ li {
 }
 
 .main {
-  margin: 1rem 0.5rem 1rem 0.5rem;
+  margin: 1rem 0 1rem 0;
 
 }

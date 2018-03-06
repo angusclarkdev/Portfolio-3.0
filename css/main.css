@@ -1,5 +1,7 @@
 p {
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1rem 2rem 1rem 2rem; }
 
 a {
   text-decoration: none;
@@ -9,7 +11,12 @@ a {
 
 h1, h2, h3 {
   font-family: "Lato", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 2rem 0 1rem 0;
+  margin: 0; }
+
+h2 {
+  padding: 2rem 0 2rem 0; }
 
 form {
   display: flex;
@@ -45,8 +52,7 @@ form {
   top: 0;
   background-color: #f7f7f7;
   z-index: 1;
-  line-height: 1.5;
-  border-left: 0.5rem solid rgba(45, 234, 95, 0.5); }
+  line-height: 1.5; }
   #Header nav {
     height: inherit;
     margin: 0;
@@ -58,12 +64,14 @@ form {
       grid-template-columns: 1fr 1fr 1fr;
       padding: 0; }
       #Header nav ul a {
+        line-height: 46px;
         justify-self: center;
         align-self: center; }
         #Header nav ul a:active {
           color: inherit; }
-    #Header nav li {
-      font-weight: 400; }
+  #Header .activeLink {
+    border-bottom: 2px solid #45f8d5;
+    font-weight: 400; }
 
 #Hero {
   border: none; }
@@ -77,49 +85,68 @@ form {
       border-radius: 50%;
       box-shadow: 0px 4px 3px rgba(153, 153, 153, 0.8); }
   #Hero .intro p {
-    text-align: center;
-    padding: 1rem 2rem 1rem 2rem;
-    margin: 0; }
+    text-align: center; }
   #Hero h1 {
     margin: 5rem 0 1rem 0; }
   #Hero h3 {
     margin: 1rem 0 1rem 0; }
 
-#Projects img {
-  width: 100%; }
-#Projects ul {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-  #Projects ul li {
-    font-weight: normal; }
+#Projects {
+  background-color: #fbfbfb; }
+  #Projects img {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: linear-gradient(#45f8d5, #6cd6bb);
+    display: block; }
+  #Projects .name {
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  #Projects ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  #Projects .image {
+    margin: 0 1rem;
+    position: relative;
+    box-sizing: content-box; }
+    #Projects .image:hover {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+      cursor: pointer; }
+  #Projects p.description {
+    padding-bottom: 4rem; }
 
 #Footer {
+  background-color: #f7f7f7;
+  height: 3rem;
   text-align: left; }
+  #Footer p {
+    padding-bottom: 0;
+    font-size: 0.9rem; }
   #Footer i {
     margin: 1rem 0 1rem 1rem;
-    padding-right: 1rem; }
-  #Footer .copy {
-    float: right; }
+    padding-right: 1rem;
+    font-size: 1.1rem; }
 
 html {
   font-size: 16px;
-  background-color: #fff;
   margin: 0;
   width: 100%;
   overflow-x: hidden; }
 
 body {
+  overflow-y: hidden;
   margin: 0;
   width: 100%;
   text-align: center;
   line-height: 1.5;
   overflow-x: hidden;
-  font-family: "source sans pro", sans-serif;
-  font-weight: normal;
-  color: #333; }
+  font-family: "Work sans", sans-serif;
+  font-weight: 300;
+  color: #333333; }
 
 ul {
   text-decoration: none;
@@ -132,6 +159,6 @@ li {
   text-decoration: none; }
 
 .main {
-  margin: 1rem 0.5rem 1rem 0.5rem; }
+  margin: 1rem 0 1rem 0; }
 
 /*# sourceMappingURL=main.css.map */

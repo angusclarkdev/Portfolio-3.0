@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <section id="Header" class="">
-    <nav>
+  <section id="Header" class="section">
+    <nav id="Nav">
       <ul>
-        <a href="#Header" class="home">
+        <a href="#Hero" class="scroll activeLink">
           <li>Home</li>
         </a>
         <a href="#Projects" class="scroll">
@@ -27,7 +27,7 @@
       </ul>
     </nav>
   </section>
-  <section id="Hero" class="grid main">
+  <section id="Hero" class="grid main section">
     <h1>Angus Clark</h1>
     <div class="me">
 
@@ -37,32 +37,55 @@
     <h3>Web Developer</h3>
     <div class="intro">
       <p>Hi, I'm a web developer from the UK. I primarily work with <span>CSS</span> and <span>Javascript</span>, putting emphasis on clean, minimalist design with straight forward functionality. Currently working on freelance projects, my goal in 2018 is
-        to gain full time employment in the industry.
+        to gain full time employment in the industry. You can find my CV here.
       </p>
     </div>
   </section>
-  <section id="Projects" class="grid main">
+
+  <section id="Projects" class="grid main section">
     <h2>Projects</h2>
-    <img src="/images/placeholder.png" alt="">
+
+    <div class="image">
+      <img src="/images/wbthumb.png" alt="">
+      <p class="name">Wired Back ltd</p>
+    </div>
+    </img>
+
+    <p class="description"> Reiciendis necessitatibus, officiis, esse nostrum corporis animi minus sit voluptates fuga qui, at quae voluptatum distinctio nisi nam commodi tenetur! Ad, dolorum.</p>
+
+    <div class="image">
+      <img src="/images/placeholder.png" alt="">
+      <div class="taskbar">
+        <i class="icon close"></i>
+        <i class="icon minimise"></i>
+        <i class="icon expand"></i>
+      </div>
+    </div>
+
+
     <ul>
       <li>Site</li>
       <li>Github</li>
     </ul>
     <p> Reiciendis necessitatibus, officiis, esse nostrum corporis animi minus sit voluptates fuga qui, at quae voluptatum distinctio nisi nam commodi tenetur! Ad, dolorum.</p>
-    <img src="/images/placeholder.png" alt="">
-    <ul>
-      <li>Site</li>
-      <li>Github</li>
-    </ul>
-    <p> Reiciendis necessitatibus, officiis, esse nostrum corporis animi minus sit voluptates fuga qui, at quae voluptatum distinctio nisi nam commodi tenetur! Ad, dolorum.</p>
-    <img src="/images/placeholder.png" alt="">
+
+    <div class="image">
+      <img src="/images/placeholder.png" alt="">
+      <div class="taskbar">
+        <i class="icon close"></i>
+        <i class="icon minimise"></i>
+        <i class="icon expand"></i>
+      </div>
+    </div>
+
     <ul>
       <li>Site</li>
       <li>Github</li>
     </ul>
     <p> Reiciendis necessitatibus, officiis, esse nostrum corporis animi minus sit voluptates fuga qui, at quae voluptatum distinctio nisi nam commodi tenetur! Ad, dolorum.</p>
   </section>
-  <section id="Contact" class="grid main">
+
+  <section id="Contact" class="grid main section">
     <h2>Contact</h2>
     <form class="" action="index.html" method="post">
       <input id="name" type="text" name="name" placeholder="Name:">
@@ -72,7 +95,7 @@
       <button class="button" type="submit" name="submit">Send</button>
     </form>
   </section>
-  <section id="Footer" class="main">
+  <section id="Footer" class="">
 
     <i class="fab fa-github"></i>
 

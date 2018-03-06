@@ -2,31 +2,30 @@ $(function() {
 
   // Smooth scrolling to sections
 
-  let scroll = $('.scroll');
-  let home = $('.home');
+  let link = $('.scroll');
 
-  scroll.click(function(event) {
+  link.click(function(event) {
     event.preventDefault();
     $('body,html').animate({
-      scrollTop: $(this.hash).offset().top - 48
-    }, 1000);
-  });
-
-  // smooth scrolling to top of page
-
-  home.click(function(event) {
-    event.preventDefault();
-    $('body,html').animate({
-      scrollTop: 0
+      scrollTop: $(this.hash).offset().top - 80
     }, 1000);
   });
 
   // highlight nav link relative to section
 
+  $(window).scroll(function(event) {
+    let scrollbar = $(this).scrollTop(); // get position of window scroll
 
-  if (window.scrollTop == 0) {
+    link.each(function() { //for each link
 
-  }
+      let sectionPosition = $(this.hash).offset().top - 81; // get position of hash elements - header
 
+      if (sectionPosition <= scrollbar) { // if section position less/equal to window
 
+        $(this).parent().find('a').removeClass('activeLink')
+        $(this).addClass('activeLink');
+
+      }
+    })
+  });
 });
