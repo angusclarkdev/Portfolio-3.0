@@ -1,9 +1,11 @@
 #Hero {
 border: none;
+margin-top: 3rem;
   .me {
     display: flex;
     align-items: center;
     justify-content: center;
+
   //  min-height: 40vh;
     img {
 
@@ -19,7 +21,7 @@ border: none;
 
         p {
           text-align: center;
-          padding: 0 2rem;      
+          padding: 0 2rem;
 
 
         }

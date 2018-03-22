@@ -27,7 +27,10 @@ textarea {
   width: 90%;
   height: 3rem;
   &:focus {
-  }
+  border: 1px solid #45f8d5;
+  box-shadow: none;
+
+}
   }
   #message {
   min-height: 150px;

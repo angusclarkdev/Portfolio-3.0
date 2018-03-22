@@ -6,16 +6,17 @@
   background-color: $secondaryBg;
   z-index: 1;
   line-height: 1.5;
-  //border-left: 0.5rem solid $accentBorder;
+  opacity: 0.9;
+  //border-left: 0.5rem solid $navBorder;
     nav {
     height: inherit;
     margin: 0;
     width: inherit;
       ul {
       height: inherit;
-      display: grid;
-      grid-template-rows: 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       padding: 0;
         a {
           line-height: 46px;
