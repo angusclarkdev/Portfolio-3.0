@@ -1,7 +1,12 @@
 p {
-  font-size: 1.1rem;
   margin: 0;
   padding: 1rem 1rem 1rem 1rem; }
+  @media only screen and (min-width: 500px) {
+    p {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 628px) and (max-width: 768px) {
+    p {
+      padding: 3rem; } }
 
 a {
   text-decoration: none;
@@ -22,9 +27,10 @@ h1, h2, h3 {
   padding: 2rem 0;
   margin: 0; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   h1 {
-    padding-top: 0; } }
+    padding-top: 0;
+    font-size: 1.8rem; } }
 
 h2 {
   padding: 2rem 0 2rem 0; }
@@ -34,11 +40,15 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f8f8f8;
   padding: 2rem 0; }
   form ::placeholder {
     font-weight: 300; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 500px) {
+    form {
+      width: 80%;
+      margin-left: 10%;
+      background-color: #f8f8f8; } }
+  @media only screen and (min-width: 1025px) {
     form {
       width: 70%;
       margin-left: 15%; } }
@@ -46,7 +56,7 @@ form {
   form input[type="email"],
   form textarea {
     border-radius: 5px;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     font-family: inherit;
     font-size: 1rem;
     font-weight: inherit;
@@ -59,23 +69,46 @@ form {
     margin-bottom: 30px;
     width: 90%;
     height: 3rem; }
+    @media only screen and (min-width: 500px) {
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        font-size: 1.2rem; } }
     form input[type="text"]:focus,
     form input[type="email"]:focus,
     form textarea:focus {
       border: 1px solid #45f8d5;
       box-shadow: none; }
+    form input[type="text"].required:invalid,
+    form input[type="email"].required:invalid,
+    form textarea.required:invalid {
+      border: 1px solid red;
+      box-shadow: none; }
   form #message {
     min-height: 150px;
     padding-top: 1rem; }
+  form .button {
+    padding: 1rem 2rem;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    background-color: #fbfbfb; }
+    form .button:hover {
+      cursor: pointer;
+      border: 1px solid #45f8d5; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .box {
-    width: 55%;
-    margin-left: 50px;
-    height: 60vh;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 500px;
+    background-color: #fbfbfb;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 2rem;
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
-    background-color: #fbfbfb; } }
+    flex-direction: column;
+    justify-content: center; } }
 
 #Header {
   height: 3rem;
@@ -86,6 +119,9 @@ form {
   z-index: 1;
   line-height: 1.5;
   opacity: 0.9; }
+  @media only screen and (min-width: 500px) {
+    #Header {
+      font-size: 1.2rem; } }
   #Header nav {
     height: inherit;
     margin: 0;
@@ -96,7 +132,7 @@ form {
       flex-direction: row;
       justify-content: space-around;
       padding: 0; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1025px) {
         #Header nav ul {
           justify-content: center; } }
       #Header nav ul a {
@@ -115,7 +151,7 @@ form {
 #Hero {
   border: none;
   margin-top: 3rem; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1025px) {
     #Hero {
       display: flex;
       justify-content: flex-start;
@@ -125,13 +161,14 @@ form {
       background-repeat: no-repeat;
       background-size: cover;
       height: calc(100vh - 3rem);
-      position: relative; } }
+      position: relative;
+      width: 100%; } }
   #Hero .circle {
     width: 280px;
     height: 280px;
     border-radius: 50%;
     box-shadow: 0px 4px 3px rgba(153, 153, 153, 0.8); }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1025px) {
       #Hero .circle {
         display: block;
         float: left;
@@ -145,19 +182,24 @@ form {
       text-align: center;
       padding: 2rem;
       padding-bottom: 0; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        #Hero .intro p {
+          padding: 3rem 4rem; } }
+      @media only screen and (min-width: 1025px) {
         #Hero .intro p {
           width: 82%;
           text-align: left;
           line-height: 1.8;
           padding-top: 1rem; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1025px) {
       #Hero .intro {
         position: relative;
         left: 3rem; } }
 
 #Projects {
   background-color: #f8f8f8; }
+  #Projects p {
+    padding-top: 1rem; }
   @media only screen and (min-width: 768px) {
     #Projects .projects {
       display: grid;
@@ -170,9 +212,14 @@ form {
   #Projects h2 {
     padding-bottom: 2rem; }
   #Projects .image {
+    box-sizing: content-box;
     background-color: #fff;
-    margin: 0 1rem 2rem 1rem;
-    box-sizing: content-box; }
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1rem; }
+    @media only screen and (min-width: 1025px) {
+      #Projects .image {
+        margin: 0 1rem 1rem 1rem; } }
   #Projects img {
     width: 100%;
     position: relative;

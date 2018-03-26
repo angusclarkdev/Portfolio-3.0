@@ -1,7 +1,7 @@
 #Hero {
 border: none;
 margin-top: 3rem;
-@include min-width(768px){
+@include min-width(1025px){
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -11,6 +11,7 @@ background-image: url("/images/mac.jpg");
   background-size: cover;
   height: calc(100vh - 3rem);
   position: relative;
+  width: 100%;
 
 }
   .circle {
@@ -18,7 +19,7 @@ background-image: url("/images/mac.jpg");
     height: 280px;
     border-radius: 50%;
     box-shadow: 0px 4px 3px rgba(153,153,153, 0.8);
-    @include min-width(768px){
+    @include min-width(1025px){
       display: block;
       float: left;
       //grid-column: 1;
@@ -37,7 +38,10 @@ background-image: url("/images/mac.jpg");
           text-align: center;
           padding: 2rem;
           padding-bottom: 0;
-        @include min-width(768px){
+        @include minmax(769px, 1024px){
+          padding: 3rem 4rem;
+        }
+        @include min-width(1025px){
           width: 82%;
       text-align: left;
       line-height: 1.8;
@@ -46,7 +50,7 @@ background-image: url("/images/mac.jpg");
 
         }
         }
-        @include min-width(768px){
+        @include min-width(1025px){
           position: relative;
           left: 3rem;
         }

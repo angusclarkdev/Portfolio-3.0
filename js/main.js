@@ -28,4 +28,15 @@ $(function() {
       }
     })
   });
+
+  // Form validation
+
+    $('[type="submit"]').on('click', function() {
+      // add required class to matched elements
+      $(this)
+        .closest('form')
+        .find('[required]')
+        .addClass('required');
+    });
+
 });

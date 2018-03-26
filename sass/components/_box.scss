@@ -1,0 +1,15 @@
+.box {
+  @include min-width(1025px){
+  width: 60%;
+  height: 500px;
+  background-color: #fbfbfb;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  margin-left: 2rem;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+}
