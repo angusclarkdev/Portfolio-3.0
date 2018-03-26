@@ -7,7 +7,7 @@ $(function() {
   link.click(function(event) {
     event.preventDefault();
     $('body,html').animate({
-      scrollTop: $(this.hash).offset().top - 80
+      scrollTop: $(this.hash).offset().top - 46
     }, 1000);
   });
 
