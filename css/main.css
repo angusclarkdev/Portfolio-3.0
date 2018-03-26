@@ -13,11 +13,18 @@ a {
     color: #6cd6bb;
     font-weight: 400; }
 
+h3 {
+  font-size: 1.2rem; }
+
 h1, h2, h3 {
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 0;
   margin: 0; }
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    padding-top: 0; } }
 
 h2 {
   padding: 2rem 0 2rem 0; }
@@ -26,9 +33,15 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 2rem 0; }
   form ::placeholder {
     font-weight: 300; }
+  @media only screen and (min-width: 768px) {
+    form {
+      width: 70%;
+      margin-left: 15%; } }
   form input[type="text"],
   form input[type="email"],
   form textarea {
@@ -52,17 +65,24 @@ form {
       border: 1px solid #45f8d5;
       box-shadow: none; }
   form #message {
-    min-height: 150px; }
+    min-height: 150px;
+    padding-top: 1rem; }
 
-.box {
-  background-color: #fbfbfb; }
+@media only screen and (min-width: 768px) {
+  .box {
+    width: 55%;
+    margin-left: 50px;
+    height: 60vh;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    background-color: #fbfbfb; } }
 
 #Header {
   height: 3rem;
   position: fixed;
   width: inherit;
   top: 0;
-  background-color: #f7f7f7;
+  background-color: #fbfbfb;
   z-index: 1;
   line-height: 1.5;
   opacity: 0.9; }
@@ -76,12 +96,18 @@ form {
       flex-direction: row;
       justify-content: space-around;
       padding: 0; }
+      @media only screen and (min-width: 768px) {
+        #Header nav ul {
+          justify-content: center; } }
       #Header nav ul a {
         line-height: 46px;
         justify-self: center;
         align-self: center; }
         #Header nav ul a:active {
           color: inherit; }
+        @media only screen and (min-width: 768px) {
+          #Header nav ul a {
+            margin: 0 2.5rem; } }
   #Header .activeLink {
     border-bottom: 2px solid #45f8d5;
     font-weight: 400; }
@@ -89,25 +115,60 @@ form {
 #Hero {
   border: none;
   margin-top: 3rem; }
-  #Hero .me {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    #Hero .me img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      box-shadow: 0px 4px 3px rgba(153, 153, 153, 0.8); }
-  #Hero .intro p {
-    text-align: center;
-    padding: 0 2rem; }
-  #Hero h1 {
-    margin: 5rem 0 1rem 0; }
-  #Hero h3 {
-    margin: 1rem 0 1rem 0; }
+  @media only screen and (min-width: 768px) {
+    #Hero {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-image: url("/images/mac.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: calc(100vh - 3rem);
+      position: relative; } }
+  #Hero .circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 3px rgba(153, 153, 153, 0.8); }
+    @media only screen and (min-width: 768px) {
+      #Hero .circle {
+        display: block;
+        float: left;
+        shape-outside: circle();
+        shape-image-threshold: 0.5;
+        position: relative;
+        margin-right: 4rem; } }
+  #Hero .intro {
+    align-self: center; }
+    #Hero .intro p {
+      text-align: center;
+      padding: 2rem;
+      padding-bottom: 0; }
+      @media only screen and (min-width: 768px) {
+        #Hero .intro p {
+          width: 82%;
+          text-align: left;
+          line-height: 1.8;
+          padding-top: 1rem; } }
+    @media only screen and (min-width: 768px) {
+      #Hero .intro {
+        position: relative;
+        left: 3rem; } }
 
 #Projects {
-  background-color: #fbfbfb; }
+  background-color: #f8f8f8; }
+  @media only screen and (min-width: 768px) {
+    #Projects .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 2rem;
+      width: 90%;
+      box-sizing: content-box;
+      margin-left: 5%; } }
+  #Projects h2 {
+    padding-bottom: 2rem; }
   #Projects .image {
     background-color: #fff;
     margin: 0 1rem 2rem 1rem;
@@ -130,15 +191,24 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: center; }
+  #Projects .description {
+    line-height: 1.8; }
 
 #Footer {
-  background-color: #f7f7f7;
-  height: 8rem; }
+  background-color: #f8f8f8;
+  height: 8rem;
+  margin-top: 2rem; }
   #Footer p {
     font-size: 0.9rem; }
   #Footer i {
-    margin: 2rem 0 1rem 1rem;
-    font-size: 1.1rem; }
+    font-size: 1.3rem;
+    margin: 2rem 2rem; }
+  #Footer .github {
+    margin-bottom: -3px; }
+  #Footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
 
 html {
   font-size: 16px;
@@ -155,7 +225,8 @@ body {
   overflow-x: hidden;
   font-family: "Work sans", sans-serif;
   font-weight: 300;
-  color: #333333; }
+  color: #333333;
+  background-color: #fbfbfb; }
 
 ul {
   text-decoration: none;
@@ -166,46 +237,5 @@ li {
   list-style: none;
   display: inline-block;
   text-decoration: none; }
-
-.main {
-  margin: 1rem 0 1rem 0; }
-
-@media screen and (min-width: 768px) {
-  .grid {
-    display: grid; }
-
-  #Header nav {
-    text-align: center; }
-  #Header nav > ul {
-    justify-content: center; }
-  #Header a {
-    margin: 0 2.5rem; }
-
-  #Hero {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-image: url("/images/coffee.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100vh - 3rem);
-    position: relative; }
-    #Hero .me {
-      grid-column: 1;
-      grid-row: 1/3; }
-    #Hero h1 {
-      grid-column: 2/3; }
-    #Hero h3 {
-      display: none; }
-
-  .box {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: none;
-    width: 50%;
-    margin-right: 50px;
-    height: 60vh;
-    top: 50%;
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.5); } }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,38 +3,42 @@
   position: fixed;
   width: inherit;
   top: 0;
-  background-color: $secondaryBg;
+  background-color: $mainBg;
   z-index: 1;
   line-height: 1.5;
   opacity: 0.9;
   //border-left: 0.5rem solid $navBorder;
-    nav {
+  nav {
     height: inherit;
     margin: 0;
     width: inherit;
-      ul {
+
+    ul {
       height: inherit;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       padding: 0;
-        a {
-          line-height: 46px;
+      @include min-width(768px){
+        justify-content: center;
+      }
+      a {
+        line-height: 46px;
         justify-self: center;
         align-self: center;
         &:active {
           color: inherit;
         }
-    }
+        @include min-width(768px) {
+          margin: 0 2.5rem;
+        }
+      }
     }
     li {
-
-
     }
   }
   .activeLink {
     border-bottom: 2px solid $navBorder;
     font-weight: 400;
-
   }
 }

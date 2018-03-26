@@ -29,52 +29,52 @@
       </ul>
     </nav>
   </section>
-  <section id="Hero" class="main section">
-    <div class="grid box">
-      <h1>Angus Clark</h1>
-      <div class="me">
+  <section id="Hero" class="">
+    <div class="box">
 
-        <img src="/images/metarj.jpg" alt="">
-
-      </div>
-      <h3>Web Developer</h3>
       <div class="intro">
-        <p>Hi, I'm a web developer from the UK. I primarily work with <span>CSS</span> and <span>Javascript</span>, putting emphasis on clean, minimalist design with straight forward functionality. Currently working on freelance projects, my goal in 2018
-          is to gain full time employment in the industry. You can find my
-          <!--link to CV -->CV here.
+        <h1>Angus Clark</h1>
+        <img class="circle" src="/images/me2.jpg" alt="">
+        <p>Hi, I'm a web developer from the UK. I primarily work with <span>CSS</span> and <span>Javascript</span>, putting emphasis on clean, minimalist design with straight forward functionality. Since the end of last year I've been working on freelance
+          projects, but I'm currently looking for a full-time developer position. You can find my CV here.
+
+
         </p>
       </div>
     </div>
   </section>
 
-  <section id="Projects" class="grid main section">
+  <section id="Projects" class="">
     <h2>Projects</h2>
-    <div class="image">
-      <p class="name">Wired Back ltd</p>
-      <img src="/images/wbthumb.png" alt="">
-      <p class="description"> A fully responsive website designed to meet the needs of the client. Features adoption of the CSS grid system, one page design, dynamic scrolling, and animated panels. More information can be found on <a class="link" href="https://github.com/angusclarkdev/WiredBack">GitHub.</a>        </p>
-    </div>
-    <div class="image">
-      <p class="name">Quote Generator</p>
-      <img src="/images/quotes1.png" alt="">
-      <p class="description"> A simple JavaScript application that generates a random quote from a range of books each time a button is clicked by the user. Features JS arrays, simple JS methods and click events. For more information visit <a class="link" href="https://github.com/angusclarkdev/WiredBack">GitHub.</a>        </p>
-    </div>
-    <div class="image">
-      <p class="name">To Do List</p>
-      <a href="https://angusclarkdev.github.io/To-Do-List/"><img src="/images/Untitled.png" alt=""> </a>
-      <p class="description"> A simple To Do list application made with JavaScript. Users can enter tasks to be completed, mark tasks as completed and/or delete tasks if they're not needed. Makes heavy use of simple DOM manipulation methods. For more information visit
-        <a class="link" href="https://github.com/angusclarkdev/To-Do-List">GitHub.</a> </p>
-    </div>
-    <div class="image">
-      <p class="name">Windows on India</p>
-      <img src="/images/Untitled.png" alt="">
-      <p class="description">Mock travel site created as an exercise in learning the Bootstrap framework. Inspired by <a class="link" href="http://www.windowsontuscany.com/">Windows on Tuscany.</a> </p>
+
+    <div class="projects">
+      <div class="image">
+        <p class="name">Wired Back ltd</p>
+        <img src="/images/wbthumb.png" alt="">
+        <p class="description"> A fully responsive website designed to meet the needs of the client. Features adoption of the CSS system, one page design, dynamic scrolling, and animated panels. More information can be found on <a class="link" href="https://github.com/angusclarkdev/WiredBack">GitHub.</a>          </p>
+      </div>
+      <div class="image">
+        <p class="name">Quote Generator</p>
+        <img src="/images/quotes1.png" alt="">
+        <p class="description"> A simple JavaScript application that generates a random quote from a range of books each time a button is clicked by the user. Features JS arrays, simple JS methods and click events. For more information visit <a class="link" href="https://github.com/angusclarkdev/WiredBack">GitHub.</a>          </p>
+      </div>
+      <div class="image">
+        <p class="name">To Do List</p>
+        <a href="https://angusclarkdev.github.io/To-Do-List/"><img src="/images/Untitled.png"alt=""> </a>
+        <p class="description"> A simple To Do list application made with JavaScript. Users can enter tasks to be completed, mark tasks as completed and/or delete tasks if they're not needed. Makes heavy use of simple DOM manipulation methods. For more information visit
+          <a class="link" href="https://github.com/angusclarkdev/To-Do-List">GitHub.</a> </p>
+      </div>
+      <!--  <div class="image">
+        <p class="name">Windows on India</p>
+        <img src="/images/Untitled.png" alt="">
+        <p class="description">Mock travel site created as an exercise in learning the Bootstrap framework. Inspired by <a class="link" href="http://www.windowsontuscany.com/">Windows on Tuscany.</a> </p>
+      </div> -->
     </div>
   </section>
 
-  <section id="Contact" class="grid main section">
+  <section id="Contact" class="">
     <h2>Contact</h2>
-    <form class="" action="form.php" method="post">
+    <form class="form" action="form.php" method="post">
       <input id="name" type="text" name="name" required maxlength="50" placeholder="Name:">
       <input id="email" type="email" name="email" required maxlength="50" placeholder="Email:">
       <textarea id="message" type="text" name="message" required maxlength="5000" placeholder="Message:"></textarea>
@@ -82,9 +82,13 @@
     </form>
   </section>
   <section id="Footer" class="">
-    <a href="https://github.com/angusclarkdev" <i class="fab fa-github"></i> </a>
-    <a href="https://www.linkedin.com/in/angusclarkdev"> <i class="fab fa-linkedin-in"></i> </a>
-    <a href="https://codepen.io/dashboard/"> <i class="fab fa-codepen"></i> </a>
+    <div class="social">
+
+
+      <a class="github" href="https://github.com/angusclarkdev"> <i class="fab fa-github"></i> </a>
+      <a href="https://codepen.io/dashboard/"> <i class="fab fa-codepen"></i> </a>
+      <a href="https://www.linkedin.com/in/angusclarkdev"> <i class="fab fa-linkedin-in"></i> </a>
+    </div>
     <p class="copy">&copy; Angus Clark 2018.</p>
   </section>
 </body>

@@ -3,8 +3,16 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+background-color: $secondaryBg;
+padding: 2rem 0;
 ::placeholder {
   font-weight: 300;
+}
+@include min-width(768px){
+
+  width: 70%;
+  margin-left: 15%;
+
 }
 
 
@@ -34,5 +42,6 @@ textarea {
   }
   #message {
   min-height: 150px;
+  padding-top: 1rem;
   }
 }

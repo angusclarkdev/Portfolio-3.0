@@ -1,16 +1,23 @@
 #Footer {
   background-color: $secondaryBg;
   height: 8rem;
-
-
+  margin-top: 2rem;
 p {
-  
   font-size: 0.9rem;
 }
   i {
-   margin: 2rem 0 1rem 1rem;
+font-size: 1.3rem;
+margin: 2rem 2rem;
+  }
 
-    font-size: 1.1rem;
+  .github {
+    margin-bottom: -3px;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
   }
 
 }
