@@ -2,7 +2,7 @@ $(function() {
 
   // Smooth scrolling to sections
 
-  let link = $('.scroll');
+  var link = $('.scroll');
 
   link.click(function(event) {
     event.preventDefault();
@@ -14,11 +14,11 @@ $(function() {
   // highlight nav link relative to section
 
   $(window).scroll(function(event) {
-    let scrollbar = $(this).scrollTop(); // get position of window scroll
+    var scrollbar = $(this).scrollTop(); // get position of window scroll
 
     link.each(function() { //for each link
 
-      let sectionPosition = $(this.hash).offset().top - 81; // get position of hash elements - header
+      var sectionPosition = $(this.hash).offset().top - 81; // get position of hash elements - header
 
       if (sectionPosition <= scrollbar) { // if section position less/equal to window
 

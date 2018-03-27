@@ -45,4 +45,9 @@ h1 {
 
 h2 {
   padding: 2rem 0 2rem 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  
 }

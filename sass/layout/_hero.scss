@@ -15,10 +15,14 @@ background-image: url("/images/mac.jpg");
 
 }
   .circle {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     box-shadow: 0px 4px 3px rgba(153,153,153, 0.8);
+    @include min-width(500px) {
+      width: 280px;
+      height: 280px;
+    }
     @include min-width(1025px){
       display: block;
       float: left;
