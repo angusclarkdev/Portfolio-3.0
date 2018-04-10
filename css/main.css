@@ -3,7 +3,7 @@ p {
   padding: 1rem 1rem 1rem 1rem; }
   @media only screen and (min-width: 500px) {
     p {
-      font-size: 1.2rem; } }
+      font-size: 1.1rem; } }
   @media only screen and (min-width: 628px) and (max-width: 768px) {
     p {
       padding: 3rem; } }
@@ -81,7 +81,7 @@ form {
       form input[type="text"],
       form input[type="email"],
       form textarea {
-        font-size: 1.2rem; } }
+        font-size: 1.1rem; } }
     form input[type="text"]:focus,
     form input[type="email"]:focus,
     form textarea:focus {
@@ -129,7 +129,7 @@ form {
   opacity: 0.9; }
   @media only screen and (min-width: 500px) {
     #Header {
-      font-size: 1.2rem; } }
+      font-size: 1.1rem; } }
   #Header nav {
     height: inherit;
     margin: 0;
@@ -138,7 +138,8 @@ form {
       height: inherit;
       display: flex;
       flex-direction: row;
-      padding: 0; }
+      padding: 0;
+      justify-content: space-around; }
       @media only screen and (min-width: 1025px) {
         #Header nav ul {
           justify-content: center; } }
